@@ -9,11 +9,37 @@
 </head>
 <body>
   <div class="global">
-    <div class="global__header"></div>
-    <div class="global__content">
-      <div class="container">
-        {% block content %}{% endblock %}
+    <div class="global__header  header">
+      <div class="header__row header__row--top">
+        <div class="container  header__items">
+          <div class="header__item">
+            <div class="city-info">
+              <a href="#" class="city-info__picker">
+                <span>Москва</span>
+              </a>
+              <span class="city-info__content">
+                <span class="city-info__text">МКАД 32 км. Внешняя сторона ТК ТРАКТ пав. 2-43Б</span>
+                <span class="city-info__divider">|</span>
+                <a href="#" class="city-info__link">Как проехать?</a>
+              </span>
+            </div>
+          </div>
+          <div class="header__item header__item--offset"></div>
+          <div class="header__item"></div>
+        </div>
       </div>
+      <div class="header__row header__row--logo">
+        <div class="container  header__items"></div>
+      </div>
+      <div class="header__row header__row--plain">
+        <div class="container  header__items"></div>
+      </div>
+      <div class="header__row header__row--plain">
+        <div class="container  header__items"></div>
+      </div>
+    </div>
+    <div class="global__content">
+      {# {% block content %}{% endblock %} #}
     </div>
     <div class="global__footer"></div>
   </div>

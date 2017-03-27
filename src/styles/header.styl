@@ -1,0 +1,40 @@
+/// ----------------------
+/// Шапка сайта.
+/// ----------------------
+
+.header
+  
+  &__row
+    
+    &--top
+      background-color #3f4c5c
+      height 46px
+      
+    &--logo
+      border-bottom 1px solid #f2f2f2
+      background-color #fafafa
+      padding-bottom 25px
+      padding-top 26px
+      
+    &--plain
+      background-color #fff
+      padding-top 30px
+      
+      &:last-child
+        padding-bottom 30px
+  
+  &__items
+    display flex
+    justify-content flex-start
+    align-items center
+    min-height 100%
+    
+  &__item
+    display block
+    flex-shrink 0
+    
+    &--offset
+      margin-left auto
+    
+    &--stretch
+      flex 1 1 auto

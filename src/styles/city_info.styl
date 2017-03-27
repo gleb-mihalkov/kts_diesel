@@ -1,0 +1,50 @@
+/// ---------------------------------
+/// Блок отображения текущего города.
+/// ---------------------------------
+
+.city-info
+  display block
+  font-size 14px
+  color #bdc2c7
+  font-size 12px
+  
+  &__content
+  &__picker
+    display inline-block
+    vertical-align middle
+  
+  &__picker
+    position relative
+    padding-right 20px
+    font-weight bold
+    font-size 14px
+    color #fff
+    
+    span
+      display inline-block
+      padding-bottom 2px
+      border-bottom 2px dashed #fff
+    
+    &:after
+      background-image img('icon_chevron.png')
+      background-position center center
+      background-repeat no-repeat
+      position absolute
+      right 0
+      top 50%
+      display block
+      width 10px
+      height 6px
+      margin-top -3px
+      content ''
+      
+  &__content
+    padding-left 20px
+    
+  &__link
+    color inherit
+    
+  &__divider
+    margin-right 6px
+    margin-left 6px
+    color #54606e
