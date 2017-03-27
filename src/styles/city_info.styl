@@ -16,12 +16,12 @@
     padding-right 20px
     font-weight bold
     font-size 14px
-    color #fff
+    color white
     
     span
+      border-bottom 2px dashed white
       display inline-block
       padding-bottom 2px
-      border-bottom 2px dashed #fff
     
     &:after
       background-image img('icon_chevron.png')
@@ -42,7 +42,11 @@
     color #bdc2c7
     
   &__link
+    transition trs_normal
     color inherit
+       
+    &:hover
+      color white
     
   &__divider
     margin-right 6px
