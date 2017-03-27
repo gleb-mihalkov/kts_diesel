@@ -1,0 +1,35 @@
+/// -------------
+/// Сетка блоков.
+/// -------------
+
+// Задает количество колонок сетки.
+grid_columns(count)
+  value = (100% / count)
+  
+  & > ^[0]__item
+    width value
+
+// Задает размер отступов между ячейками сетки.
+grid_offset(value)
+  value_half = (value / 2)
+  margin-top value_half
+  margin-right value_half
+  margin-left value_half
+  
+  & > ^[0]__item
+    padding-top value_half
+    padding-right value_half
+    padding-left value_half
+
+.grid
+  display flex
+  flex-direction row
+  justify-content space-between
+  align-items flex-start
+  align-content flex-start
+  
+  &--columns-2
+    grid_columns 2
+    
+  &--offset-small
+    grid_offset 10px

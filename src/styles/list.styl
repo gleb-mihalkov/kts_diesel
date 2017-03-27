@@ -1,0 +1,17 @@
+/// ---------------------------
+/// Вертикальный список блоков.
+/// ---------------------------
+
+// Задает высоту отступа для элемента списка.
+list_item(offset)
+  margin-bottom offset
+  margin-top offset
+
+.list
+  display block
+  width 100%
+  
+  &__item
+    list_item 10px
+    display block
+    width 100%

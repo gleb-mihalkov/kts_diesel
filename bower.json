@@ -1,0 +1,18 @@
+{
+  "name": "kts_diesel",
+  "description": "",
+  "main": "gulpfile.js",
+  "authors": [],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^2.0.0"
+  }
+}
