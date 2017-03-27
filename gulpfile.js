@@ -254,10 +254,19 @@ Gulp.task('server', () => {
   isServer = true
 })
 
-Gulp.task('clean', (cb) => {
-  cb = singleCall(cb)
+Gulp.task('clean', () => {
 
-  return Gulp.src(DST_DIR)
+  let files = globPath(DST_DIR, [
+    '!./.git',
+    './*'
+  ])
+
+  let opts = {
+    base: DST_DIR,
+    read: false
+  }
+
+  return Gulp.src(files, opts)
     .pipe(clean())
 })
 
