@@ -4,10 +4,9 @@
 
 // Задает количество колонок сетки.
 grid_columns(count)
-  value = (100% / count)
   
   & > ^[0]__item
-    width value
+    width (100% / count)
 
 // Задает размер отступов между ячейками сетки.
 grid_offset(value)
