@@ -1,3 +1,15 @@
 /// -------
 /// Ссылки.
 /// -------
+
+link(color_normal, color_hover = null, color_active = null)
+  transition trs_normal
+  color color_normal
+  
+  if color_hover
+    &:hover
+      color color_hover
+      
+  if color_active
+    &:active
+      color color_active
