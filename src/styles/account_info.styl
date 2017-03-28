@@ -1,0 +1,50 @@
+/// ----------------------
+/// Блок пользователя.
+/// ----------------------
+
+.account-info
+  position relative
+  display inline-block
+  padding 6px (50px + 15px) 6px 0
+  
+  &__heading
+    display block
+    margin 2px 0
+    font-weight bold
+    font-size 16px
+    line-height 22px
+    color #3f4c5c
+    
+  &__divider
+  &__link
+    display inline-block
+    vertical-align middle
+    float right
+    font-size 14px
+    
+  &__link
+    transition trs_normal
+    color #7e8792
+    
+    &:hover
+      color #d31020
+    
+  &__divider
+    margin-right 6px
+    margin-left 6px
+    color #bdc2c7
+    
+    &:before
+      content '|'
+    
+  &__image
+    background-image img('icon_avatar.png')
+    background-position center center
+    background-repeat no-repeat
+    border-radius 50%
+    position absolute
+    top 0
+    right 0
+    display block
+    width 50px
+    height 50px
