@@ -1,0 +1,23 @@
+/// -------------------------
+/// Группа элементов в шапке.
+/// -------------------------
+
+.header-group
+  display flex
+  justify-content flex-start
+  align-items center
+  min-height 100%
+  
+  &__item
+    display block
+    flex-shrink 0
+    
+    &--to-right
+      margin-left auto !important
+      
+    &--offset
+      margin-right 15px
+      margin-left 15px
+    
+    &--stretch
+      flex 1 1 auto
