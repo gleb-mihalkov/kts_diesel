@@ -2,10 +2,14 @@
 /// Меню футера.
 /// ----------------------
 .footer-menu
-	padding 36px 0 0 0
+	display flex
+	align-items flex-start
+	justify-content space-between
+	min-height 100%
 
 	&__item
-		float left
+		flex 0 1 auto
+		align-self auto
 
 	&__title
 		color white
@@ -13,11 +17,17 @@
 		font-weight 700
 
 	&__list
+		margin 19px 0 0 0
 		padding 0
 		list-style-type none
 
-	&__list a
-		color #bdc2c7
-		font-size 14px
-		font-weight 400
-		line-height 24px
+.footer-menu__list a
+	color #bdc2c7
+	font-size 14px
+	font-weight 400
+	line-height 24px
+	transition trs_normal
+
+	&:hover
+		color white
+		transition trs_normal
