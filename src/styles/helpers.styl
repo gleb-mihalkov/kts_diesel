@@ -2,5 +2,24 @@
 /// Содержит набор общих функций.
 /// -----------------------------
 
+// Получает ссылку на изображение из папки img.
 img(file_name)
   return url('img/' + file_name)
+
+// Кроссбраузерный код для стилизации плейсхолдера.
+placeholder()
+  
+  &::-webkit-input-placeholder
+    {block}
+  
+  &::-moz-placeholder
+    {block}
+  
+  &:-ms-input-placeholder
+    {block}
+
+// Код для стилизации кнопки очистки input[type=search].
+search_cancel()
+
+  &::-webkit-search-cancel-button
+    {block}
