@@ -1,0 +1,31 @@
+/// ----------------------
+/// Главное меню сайта.
+/// ----------------------
+
+.main-menu
+  position relative
+  
+  &, ul
+    display block
+    list-style none
+    margin 0
+    padding 0
+  
+  &__title
+    background red img('icon_menu_white.png') no-repeat 20px center
+    border-radius 4px
+    display block
+    padding 20px 20px 20px 44px
+    text-transform uppercase
+    font-weight bold
+    font-size 16px
+    line-height 11px
+    color white
+  
+  &__sub
+    position absolute
+    z-index 500
+    top 51px
+    left 0
+    visibility hidden
+    opacity 0
