@@ -1,11 +1,10 @@
 $(document).ready(function(){
   !(function(){
-    var $self = $('.dropdown a');
-    $(document).on('click', $self, function(){
-      $self.addClass('active');
-      $self.next().slidetoggle();
+    $(document).on('click','.dropdown > a' , function(e){
+      var $self = $(e.target);
+      $self.toggleClass('active');
+      $self.next('ul').slideToggle();
+      return false;
     });
-    console.log('322323');
-    return false;
   })(jQuery)
 });

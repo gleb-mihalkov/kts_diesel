@@ -1,15 +1,17 @@
 /// -------------
 /// Левое меню раздела.
 /// -------------
-.menu_left ul, .menu_left ul ul li 
+.menu_left ul, .menu_left ul ul li
   padding 0
   margin 0
+.menu_left ul ul li
+  background #fafafa
 .menu_left ul ul
   display none
 .menu_left li.dropdown > a
   font-weight 700
 .menu_left li.dropdown.active ul
-  display block  
+  display block
 .menu_left span
   background #d31020
   visibility hidden
@@ -36,8 +38,13 @@
   border-bottom 1px solid #f2f2f2 !important
   position relative
   width 100%
-  padding 0 0 0 6px
   transition trs_normal
+  &.active
+    color #d31020
+    text-transform uppercase
+    transition trs_normal
+.menu_left li.dropdown > a.active:after
+  background url('img/icon_list_arr_red.png') no-repeat center center
 .menu_left li.dropdown > a
   height 71px
   padding 0 0 0 32px
@@ -52,7 +59,7 @@
   position absolute
   top 34px
   right 31px
-.menu_left a:hover  
+.menu_left a:hover
   transition trs_normal
   color #d31020
 .menu_left a:hover span
