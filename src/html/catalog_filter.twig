@@ -1,0 +1,38 @@
+<div class="catalog-filter">
+  <div class="catalog-filter__title">Поиск запчасти по артикулу</div>
+  <div class="catalog-filter__group">
+    <div class="catalog-filter__item">
+      <input type="search" class="input input--wide input--search input--search--small" placeholder="Введите артикул детали">
+    </div>
+    <div class="catalog-filter__item">
+      <a href="#" class="button button--primary button--width-235">Помощь менеджера</a>
+    </div>
+  </div>
+  <div class="catalog-filter__group">
+    <div class="catalog-filter__item">
+      Расширенный поиск
+    </div>
+    <div class="catalog-filter__item">
+      {% set title_filter = 'Марка автомобиля' %}
+      {% include 'select.twig' %}
+    </div>
+    <div class="catalog-filter__item">
+      {% set title_filter = 'Модель автомобиля' %}
+      {% include 'select.twig' %}
+    </div>
+  </div>
+  <div class="catalog-filter__group">
+    <div class="catalog-filter__item">
+      {% set title_filter = 'Бренд товара' %}
+      {% include 'select.twig' %}
+    </div>
+    <div class="catalog-filter__item">
+      {% set title_filter = 'Модель двигателя' %}
+      {% include 'select.twig' %}
+    </div>
+    <div class="catalog-filter__item">
+      {% set title_filter = 'Экологический класс' %}
+      {% include 'select.twig' %}
+    </div>
+  </div>
+</div>

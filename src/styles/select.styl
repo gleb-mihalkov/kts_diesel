@@ -1,0 +1,51 @@
+/// -------------------------
+/// Селект.
+/// -------------------------
+.select
+  position relative
+  height 51px
+  &__title
+    color #1b2026
+    font-size 14px
+    font-weight 400
+    margin 0 0 9px 0
+  &__slide
+    width 235px
+    height 51px
+    background-color white
+    border 1px solid #bdc2c7
+    border-radius 4px
+    position relative
+    background url('../img/icon_chevron_white.png') no-repeat
+    background-position 204px 23px
+    overflow hidden
+    &.active
+      overflow visible
+      border 1px solid #bdc2c7
+      height auto
+      max-height 276px
+      position relative
+      z-index 10
+      box-shadow 0 3px 9px #bdc2c7
+  &__name
+    color #7e8792
+    font-size 14px
+    font-weight 400
+    line-height 51px
+    padding 0 0 0 21px
+  &__option
+    z-index 10
+    max-height 235px
+    background #fafafa
+    & input
+      position absolute
+      left -9999999999px
+  &__input-text
+    color black
+    font-size 14px
+    font-weight 400
+    line-height 40px
+    width 100%
+    display inline-block
+    padding 0 0 0 21px
+    border-top 1px solid #f2f2f2

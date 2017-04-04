@@ -7,17 +7,20 @@
   border 1px solid #bdc2c7
   background-color white
   color inherit
-  
+
   +placeholder()
     color dimgray
-    
+
   +search_cancel()
     display none
-  
+
   &--wide
     display block
     width 100%
-    
+
   &--search
     background no-repeat img('icon_search.png') right 20px center
     padding-right (20px + 18px + 20px)
+    &--small
+      width 490px
+      margin 0 20px 0 0

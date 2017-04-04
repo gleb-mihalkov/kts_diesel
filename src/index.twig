@@ -1,7 +1,15 @@
 {% extends 'html/master.twig' %}
-{% set title = 'Главная' %}
+{% set title = 'Каталог комплектующих к топливным системам' %}
 {% set is_main = true %}
 
 {% block content %}
-  <h1>Главная</h1>
+  {% include 'html/block_title.twig' %}
+  <div class="page">
+    <div class="page__aside">
+      {% include 'html/catalog_menu.twig' %}
+    </div>
+    <div class="page__main">
+      {% include 'html/catalog_filter.twig' %}
+    </div>
+  </div>
 {% endblock %}
