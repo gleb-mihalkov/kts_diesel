@@ -1,0 +1,11 @@
+<label for="slt_{{ name }}" class="label label--wide label--offset label--small">{{ title }}</label>
+<div class="select select--wide" id="slt_{{ name }}">
+  <input type="hidden" name="{{ name }}" value="">
+  <span class="select__text" data-placeholder="Не выбрано"></span>
+  <ul class="select__options">
+    <li data-value="">Не выбрано</li>
+    {% for number in 0..10 %}
+      <li data-value="{{ number }}">{{ title }} {{ number }}</li>
+    {% endfor %}
+  </ul>
+</div>

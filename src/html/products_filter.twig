@@ -1,0 +1,33 @@
+<form action="#" class="form">
+  <div class="form__row form__row--offset-large">
+    <label for="txt_sku" class="label label--wide label--offset-large">Поиск запчасти по артикулу</label>
+    <div class="input-group">
+      <div class="input-group__item input-group__item--stretch">
+        <input type="search" class="input input--search input--wide" name="sku" id="txt_sku" placeholder="Введите артикул детали">
+      </div>
+      <div class="input-group__item">
+        <a href="#" class="button button--primary">Помощь менеджера</a>
+      </div>
+    </div>
+  </div>
+  <div class="form__row form__row--columns-3">
+    <div class="form__item">
+      <div class="label">Расширенный поиск</div>
+    </div>
+    <div class="form__item">
+      {% include 'products_filter_select.twig' with {'name': 'mark', 'title': 'Марка автомобиля'} %}
+    </div>
+    <div class="form__item">
+      {% include 'products_filter_select.twig' with {'name': 'model', 'title': 'Модель автомобиля'} %}
+    </div>
+    <div class="form__item">
+      {% include 'products_filter_select.twig' with {'name': 'brand', 'title': 'Бренд товара'} %}
+    </div>
+    <div class="form__item">
+      {% include 'products_filter_select.twig' with {'name': 'engine', 'title': 'Модель двигателя'} %}
+    </div>
+    <div class="form__item">
+      {% include 'products_filter_select.twig' with {'name': 'emission', 'title': 'Экологический класс'} %}
+    </div>
+  </div>
+</form>
