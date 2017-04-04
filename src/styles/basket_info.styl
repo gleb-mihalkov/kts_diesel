@@ -3,4 +3,32 @@
 /// ----------------------------
 
 .basket-info
+  position relative
   display block
+  
+  &__icon
+    background no-repeat center center img('icon_basket.png')
+    position relative
+    display block
+    width button_height
+    height button_height
+    
+    &[data-count='0']:before
+      display none
+    
+    &:before
+      background-color red
+      border-radius 50%
+      position absolute
+      top 3px
+      right 0px
+      display block
+      width 20px
+      height 20px
+      text-align center
+      font-weight bold
+      font-size 12px
+      line-height 20px
+      color white
+      content attr(data-count)
+  
