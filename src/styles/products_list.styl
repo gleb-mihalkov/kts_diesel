@@ -3,14 +3,16 @@
 /// ----------------------
 
 .products-list
-  border-top border_lightgray
-  display border-left
+  
+  &__header
+  &__content
+  &__bottom
+    margin 30px 0
   
   &__header
     display flex
     justify-content space-between
     align-items center
-    padding 30px 0
     
   &__param
     display flex
@@ -31,7 +33,6 @@
   &__bottom
     display flex
     align-items center
-    padding-top 30px
     
   &__pagination
     margin-left auto

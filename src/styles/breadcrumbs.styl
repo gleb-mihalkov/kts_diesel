@@ -1,0 +1,16 @@
+/// ----------------------
+/// Хлебные крошки.
+/// ----------------------
+
+.breadcrumbs
+  font-size 12px
+  
+  &__item
+    link dimgray red
+    
+    &:before
+      color dimgray !important
+      content '/ '
+      
+    &:first-child:before
+      display none
