@@ -1,0 +1,59 @@
+/// ------------------------
+/// Сворачивающаяся область.
+/// ------------------------
+
+.collapse
+  display block
+  
+  &__heading
+  &__inner
+    font-weight normal
+    font-size 16px
+    line-height 22px
+  
+  &__heading
+    border 1px solid fadegray
+    border-radius 4px
+    position relative
+    display block
+    padding 17px 20px
+    cursor pointer
+    
+    &:after
+      transition trs_normal
+      transform rotate(0deg)
+      background no-repeat center center img('icon_chevron_white.png')
+      opacity .5
+      position absolute
+      top 50%
+      right 21px
+      display block
+      width 10px
+      height 6px
+      margin-top -3px !important
+      content ''
+    
+  &__content
+    transition trs_normal
+    overflow hidden
+    height 0
+    
+  &__inner
+    border-bottom-right-radius 4px
+    border-bottom-left-radius 4px
+    border 1px solid darkwhite
+    background dimwhite
+    display block
+    padding 15px 20px
+      
+  &.active
+    
+    & ^[0]__heading
+      border-bottom-right-radius 0
+      border-bottom-left-radius 0
+      
+      &:after
+        transform rotate(-180deg)
+      
+    & ^[0]__content
+      height 120px

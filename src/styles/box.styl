@@ -1,0 +1,39 @@
+/// -------------------------------------------------
+/// Резиновый flex-контейнер для разного содержимого.
+/// -------------------------------------------------
+
+.box
+  display flex
+  
+  &__aside
+    
+    &:first-child
+      margin-left 0
+      
+    &:last-child
+      margin-right 0
+    
+    &--offset
+      margin 0 84px
+    
+    &--small
+      width 228px
+  
+  &__main
+    flex 1 1 50%
+    
+  &__heading
+  &__content
+    display block
+    width 100%
+    margin 34px 0
+    
+  &__heading
+    font-weight bold
+    font-size 24px
+    
+  &__content
+    
+    &--line
+      border-top 1px solid darkwhite
+      padding-top 16px

@@ -1,0 +1,41 @@
+<div class="box box--offset">
+  <div class="box__main">
+    <h2 class="box__heading">Часто задаваемые вопросы</h2>
+    <div class="box__content">
+      <div class="collapse-list">
+        {% for number in 1..10 %}
+          <div class="collapse-list__item  collapse">
+            <h3 class="collapse__heading">Какая гарантия, что товар заявленного качества?</h3>
+            <div class="collapse__content">
+              <div class="collapse__inner  text">
+                <p>Вся наша продукция­ это официально разрешенный товар. Мы предоставляем ГТД в счетах фактурах.</p>
+                <p><a href="#" class="gray">–  Подробнее</a></p>
+              </div>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+  <div class="box__aside box__aside--small box__aside--offset">
+    <h2 class="box__heading">Есть вопрос?</h2>
+    <div class="box__content box__content--line">
+      <div class="text">
+        <p>Мы с радостью ответим на все интересующие вас вопросы и поможем сделать первый шаг!</p>
+        <p><small>Для этого заполните форму ниже и наш менеджер перезвоним вам в течении 15 минут.</small></p>
+        <p></p>
+      </div>
+      <form action="#" class="form">
+        <div class="form__row form__row--offset">
+          <input type="text" name="name" class="input input--fade" placeholder="Ваше имя">
+        </div>
+        <div class="form__row form__row--offset">
+          <input type="tel" name="phone" class="input input--fade" placeholder="Телефон">
+        </div>
+        <div class="form__row form__row--offset">
+          <button type="submit" class="button button--primary button--wide" disabled="">Жду звонка</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
