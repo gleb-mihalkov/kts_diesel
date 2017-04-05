@@ -1,0 +1,46 @@
+/// ----------------------
+/// Разбивка на страницы.
+/// ----------------------
+
+.pagination
+  display flex
+  align-items center
+  
+  &__list
+    display flex
+    padding-left 20px
+  
+  &__item
+    link dimgray red
+    border 1px solid fadegray
+    border-radius 4px
+    display block
+    width 51px
+    height 51px
+    margin-left 9px
+    text-align center
+    font-size 14px
+    line-height 49px
+    
+    &:first-child
+      margin-left 0
+      
+    &:hover
+      border-color red
+      
+    &.active
+      border-color red
+      border-width 2px
+      font-weight bold
+      line-height 47px
+      color red
+      cursor default
+      
+    &--dots
+      border none
+      width 31px
+      color dimgray !important
+      cursor default
+      
+      &:before
+        content '...'
