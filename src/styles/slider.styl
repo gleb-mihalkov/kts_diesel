@@ -1,0 +1,15 @@
+.js-slider.left
+  float left
+.js-slider-pagination__item
+  display inline-block
+  cursor pointer
+  & svg
+    fill dimgray
+    transition trs_normal
+    &:hover
+      fill black
+      transition trs_normal
+  &.left
+    transform rotate(90deg)
+  &.right
+    transform rotate(-90deg)
