@@ -40,7 +40,7 @@
     
   &__button
     transition trs_normal
-    background white no-repeat center center img('icon_cart_add.png')
+    background white no-repeat center center
     border-top-right-radius 4px
     border-bottom-right-radius 4px
     border none
@@ -49,11 +49,25 @@
     width 74px
     height 76px
     
-    &:hover
-      background-image img('icon_cart_add_red.png')
+    &--add
+      background-image img('icon_cart_add.png')
+    
+      &:hover
+        background-image img('icon_cart_add_red.png')
+        
+    &--remove
+      background-image img('icon_cart_added.png')
+      display none
+      
+      &:hover
+        background-image img('icon_cart_add_red.png')
         
   &.active
     
     & ^[0]__button
-      background-image img('icon_cart_added.png') !important
-      cursor default
+      
+      &--add
+        display none
+      
+      &--remove
+        display block
