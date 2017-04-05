@@ -21,6 +21,38 @@
       </span>
     </div>
   </form>
-  <div class="products-list__content"></div>
+  <div class="products-list__content">
+    {% for number in 1..10 %}
+      <div class="products-list__item">
+        <form action="#" class="product-item  {% if loop.index0 is even %}active{% endif %}">
+          <input type="hidden" name="id" value="{{ number }}">
+          {% if loop.index0 is even %}
+            <a href="#" class="product-item__image product-item__image--empty"></a>
+          {% else %}
+            <a href="#" class="product-item__image" style="background-image: url('res/product_item.png')"></a>
+          {% endif %}
+          <div class="product-item__text">
+            <div class="product-item__subtitle">
+              Артикул: 0445110646
+              &nbsp;|&nbsp;
+              Bosch
+            </div>
+            <h2 class="product-item__title">
+              <a href="#">Форсунка №{{ number }}</a>
+            </h2>
+          </div>
+          <div class="product-item__price">
+            {% if loop.index0 is even %}
+              <div class="product-item__pricetext">Наличие и цену<br>уточняйте у менеджера</div>
+            {% else %}
+              <div class="product-item__pricedesc">Розничная цена:</div>
+              <div class="product-item__pricevalue  price">10 122</div>
+            {% endif %}
+          </div>
+          <button type="submit" class="product-item__button"></button>
+        </form>
+      </div>
+    {% endfor %}
+  </div>
   <div class="products-list__bottom"></div>
 </div>
