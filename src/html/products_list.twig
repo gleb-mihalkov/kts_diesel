@@ -1,0 +1,26 @@
+<div class="products-list">
+  <form class="products-list__header">
+    <div class="products-list__param">
+      <span>Сортировать по цене</span>
+      <span class="sort">
+        <input type="radio" name="sort" class="sort__order sort__order--desc" id="rdo_sort_desc" value="desc">
+        <input type="radio" name="sort" class="sort__order sort__order--asc" id="rdo_sort_asc" value="asc">
+        <span class="sort__icon"></span>
+      </span>
+    </div>
+    <div class="products-list__param">
+      <span>Показывать по</span>
+      <span class="select select--number">
+        <input type="hidden" class="select__input" name="count">
+        <span class="select__text">20</span>
+        <ul class="select__options">
+          <li data-value="20">20</li>
+          <li data-value="50">50</li>
+          <li data-value="100">100</li>
+        </ul>
+      </span>
+    </div>
+  </form>
+  <div class="products-list__content"></div>
+  <div class="products-list__bottom"></div>
+</div>

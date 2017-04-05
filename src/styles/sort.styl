@@ -1,0 +1,27 @@
+/// ----------------------
+/// Кнопка сортировки.
+/// ----------------------
+
+.sort
+  position relative
+  display inline-block
+  
+  &__order
+    position absolute
+    left -9999px
+    
+  &__icon
+    background no-repeat center center img('icon_sort.png')
+    transform scale(1, 1)
+    border 1px solid rgba(189, 194, 199, 0.5)
+    border-radius 4px
+    display block
+    width button_height
+    height button_height
+    cursor pointer
+    
+  &__order--asc:checked ~ &__icon
+    transform scale(1, 1)
+    
+  &__order--desc:checked ~ &__icon
+    transform scale(1, -1)
