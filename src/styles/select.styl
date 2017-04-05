@@ -43,3 +43,26 @@
     visibility hidden
     position absolute
     display block
+    
+  &--number
+    font-weight bold
+    
+    & ^[0]__text
+      border-color rgba(189, 194, 199, 0.5)
+      min-width 93px
+      padding-right 44px
+      padding-left 0
+      text-align center
+      font-size 14px
+      
+      &:before
+        background rgba(189, 194, 199, 0.5)
+        position absolute
+        top 50%
+        right 44px
+        display block
+        width 1px
+        height 16px
+        margin-top -8px
+        content ''
+      
