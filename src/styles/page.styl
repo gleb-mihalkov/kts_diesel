@@ -16,13 +16,13 @@
     & ~ ^[0]__aside
     & ~ ^[0]__main
       border-top none
+      
+    & + ^[0]__aside
+      border-right none
 
   &__aside
     border 1px solid darkwhite
     flex 0 0 auto
-    
-    &:first-child
-      border-right none
       
     &:last-child
       border-left none
