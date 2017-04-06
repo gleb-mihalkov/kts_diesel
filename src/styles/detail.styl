@@ -1,6 +1,8 @@
 /// -------------------------
 /// Детальная карточка.
 /// -------------------------
+.catalog-detail
+  border 1px solid #f2f2f2
 .catalog-detail__block:after
   content ""
   visibility hidden
@@ -11,7 +13,6 @@
   width 531px
   height 394px
   border-right 1px solid #f2f2f2
-  border-bottom 1px solid #f2f2f2
   text-align center
   float left
   &__title
@@ -25,7 +26,6 @@
     background-position center center !important
     background-repeat no-repeat !important
 .catalog-detail__info
-  border-bottom 1px solid #f2f2f2
   height 394px
   float left
   padding 31px
@@ -106,9 +106,6 @@
     line-height 17px
     & span
       font-weight 700
-    
-.catalog-detail__tabs
-  width 100%
 .catalog-detail__all-price
   font-size 14px
   font-weight 400
@@ -146,3 +143,7 @@
   &:hover
     color #d31020
     transition trs_normal
+.catalog-detail__tabs
+  width 100%
+  margin 30px 0 0 0
+  border 1px solid #f2f2f2

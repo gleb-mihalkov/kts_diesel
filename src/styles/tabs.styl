@@ -1,0 +1,79 @@
+/// -------------------------
+/// Tabs.
+/// -------------------------
+.tabs_nav
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: start;
+  align-items: start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  min-height: 100%;
+  border-bottom 1px solid #f2f2f2
+  &__item
+    width 25%
+    -webkit-order 0
+    -ms-flex-order 0
+    order 0
+    -webkit-flex 0 1 auto
+    -ms-flex 0 1 auto
+    flex 0 1 auto
+    -webkit-align-self auto
+    -ms-flex-item-align auto
+    align-self auto
+    text-align center
+    border-right 1px solid #f2f2f2
+    height 71px
+    line-height 71px
+    cursor pointer
+    position relative
+    background #fafafa
+    &:before
+      height 0
+      transition trs_normal
+      content ''
+    &.active, &:hover
+      font-weight 700
+      background #fff
+      text-transform uppercase
+      color #d31020
+      border-top none
+      &:before
+        content ''
+        background-color: #9a2d2a
+        position absolute
+        left -1px
+        top -1px
+        right -1px
+        height 3px
+        transition trs_normal
+      &:after
+        content ''
+        background url('/img/tab_arr.png') no-repeat center center
+        width 9px
+        height 6px
+        display inline-block
+        position absolute
+        bottom -1px
+        left 50%
+        margin 0 0 0 -4.5px
+    &:last-child
+      border none
+.tabs_content
+  position relative
+  &__item
+    padding 31px 35px 27px 31px
+    position absolute
+    top 0
+    left 0
+    z-index 1
+    transition trs_normal
+    opacity 0
+    &.active
+      opacity 1
+      background #fff
+      position relative
+      z-index 10
+      transition trs_normal
