@@ -1,0 +1,44 @@
+/// ----------------------
+/// Карусель отзывов.
+/// ----------------------
+
+.responses-carousel
+  
+  &__header
+    display flex
+    align-items center
+  
+  &__heading
+    display block
+    width 341px
+    margin 0
+    font-weight bold
+    font-size 24px
+    line-height 36px
+    
+    a
+      link black red
+        
+  &__dots
+    display flex
+    align-items center
+    
+  &__dot
+    transition trs_normal
+    border 3px solid lightgray
+    border-radius 50%
+    background transparent
+    display block
+    width 15px
+    height 15px
+    margin-left 15px
+    
+    &:first-child
+      margin-left 0
+      
+    &.active
+    &:hover
+      background lightgray
+      
+    &.active
+      cursor default
