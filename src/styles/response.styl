@@ -1,0 +1,57 @@
+/// ----------------------
+/// Отзыв.
+/// ----------------------
+
+.response
+  display flex
+  align-items flex-start
+  
+  &__header
+    flex 0 0 auto
+    width 341px
+    
+  &__content
+    flex 1 1 50%
+    
+  &__text
+    display block
+    margin 0
+    max-height 66px
+    overflow hidden
+    font-size 16px
+    line-height 22px
+    
+  &__link
+    link dimgray red
+    display inline-block
+    vertical-align middle
+    
+    & + &
+      
+      &:before
+        margin 0 10px
+        color #dee0e3
+        content '|'
+    
+    &--main
+      position relative
+      padding-left 16px
+      
+      &:before
+        position absolute
+        top 0
+        left 0
+        content '–'
+        
+      &:after
+        transition trs_normal
+        border-top 2px dashed dimgray
+        position absolute
+        opacity .75
+        display block
+        width calc(100% - 16px)
+        height 2px
+        content ''
+        
+      &:hover:after
+        border-top-color red

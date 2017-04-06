@@ -7,5 +7,30 @@
       {% endfor %}
     </nav>
   </div>
-  <div class="responses-carousel__content"></div>
+  <div class="responses-carousel__content">
+    {% for number in 1..3 %}
+      <div class="responses-carousel__item {% if loop.index == 1 %} active{% endif %}">
+        <div class="response">
+          <div class="response__header">
+            <div class="account-logo">
+              <a href="#" class="account-logo__image account-logo__image--empty"></a>
+              <div class="account-logo__inner">
+                <span class="account-logo__title">Антон</span>
+                <span class="account-logo__text">
+                  <time datetime="2017-02-25">25 Февраля 2017</time>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="response__content">
+            <p class="response__text">Хорошая контора! Покупал форсунки на Faw и Шакман, все в наличии. Цены хорошие соответствуют качеству. Брал там же брату на Газель и Камаз. Покупал форсунки на Faw и Шакман, все в наличии. Цены соответствуют. Брал там же брату на Газель</p>
+            <p class="response__links">
+              <a href="#" class="response__link response__link--main">Читать весь отзыв</a>
+              <a href="#" class="response__link">Все отзывы</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
 </div>
