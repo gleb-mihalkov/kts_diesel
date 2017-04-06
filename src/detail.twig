@@ -8,7 +8,7 @@
       <div class="page__header">
         {% include 'html/lead.twig' %}
       </div>
-      <div class="page__main page__main--plain">
+      <div class="page__main--plain">
         <div class="catalog-detail">
           <div class="catalog-detail__block clear">
           <div class="catalog-slider js-slider js-slider--left">
@@ -38,10 +38,36 @@
           </div>
           <div class="catalog-detail__info">
             <div class="catalog-detail__info-top">
-              <div class="catalog-detail__info-title">Розничная цена:</div>
-              <div class="catalog-detail__info-price">13 630 <span class="rubl">&#8381</span></div>
-              <div class="catalog-detail__info-count"></div>
-              <div class="catalog-detail__info__presence">В наличии:<br /><span>100</span> шт.</div>
+              <div class="catalog-detail__group">
+                <div class="catalog-detail__info-title">Розничная цена:</div>
+                <div class="catalog-detail__info-price">13 630 <span class="rubl">&#8381</span></div>
+              </div>
+              <div class="catalog-detail__info-count">
+                <span class="minus"></span><span class="count">2</span><span class="plus"></span>
+              </div>
+              <div class="catalog-detail__info__presence">В наличии:<br /><span>100 шт.</span></div>
+            </div>
+            <div class="page__line"></div>
+            <div class="catalog-detail__all-price">
+              <div class="catalog-detail__price catalog-detail__price--marg">
+                <div class="price">Оптовая цена: <span>12 317</span></div>
+                <div class="descr">Действует только для зарегистрированных оптовиков</div>
+              </div>
+              <div class="catalog-detail__price">
+                <div class="price">Крупнооптовая цена: <span>12 317</span></div>
+                <div class="descr">Действует при покупке товара количеством от 20 шт.</div>
+              </div>
+            </div>
+            <div class="catalog-detail__buy">
+                <div class="catalog-detail__rozn">
+                  Итого:<br /> <span>27 260</span>
+                </div>
+                <div class="catalog-detail__group-button">
+                  <form>
+                    <a href="#" class="button button--primary">добавить в корзину</a>
+                  </form>
+                  <div class="buy_one_click">Заказать в один клик</div>
+                </div>
             </div>
           </div>
           </div>
