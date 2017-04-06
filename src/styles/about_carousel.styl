@@ -1,0 +1,69 @@
+/// ---------------------------------
+/// Слайдер изображений "О компании".
+/// ---------------------------------
+
+.about-carousel
+  position relative
+  display flex
+  width 100%
+  height 360px
+  
+  &__content
+    position relative
+    flex 1 1 50%
+  
+  &__aside
+    position absolute
+    left 0
+    bottom 0
+    display block
+    width 100%
+    padding 0 35px
+    
+    .button
+      padding-right 0
+      padding-left 0
+      
+  &__dots
+    display flex
+    justify-content center
+    align-items center
+    width 100%
+    height 55px
+    
+  &__dot
+    transition trs_normal
+    background-color transparent
+    border 3px solid white
+    border-radius 50%
+    display block
+    width 15px
+    height 15px
+    margin-left 15px
+    
+    &:first-child
+      margin-left 0
+    
+    &.active
+    &:hover
+      background-color white
+    
+  &__item
+    transition trs_normal
+    background-repeat no-repeat
+    background-position center center
+    background-size cover
+    visibility hidden
+    opacity 0
+    position absolute
+    top 0
+    left 0
+    width 100%
+    height 360px
+    
+    &.active
+      visibility visible
+      opacity 1
+    
+  &--small
+    width 320px
