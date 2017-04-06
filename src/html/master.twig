@@ -125,10 +125,17 @@
         </div>
       </header>
     </div>
-    <div class="global__content">
+    <div class="global__content {% if is_bottom %}global__content--no-bottom{% endif %}">
       {% block content %}{% endblock %}
     </div>
     <div class="global__footer">
+      {% if is_bottom %}
+        <div class="bar bar--plain">
+          <div class="container">
+            {% include 'responses_carousel.twig' %}
+          </div>
+        </div>
+      {% endif %}
       <footer class="footer">
         <div class="footer__top">
           <div class="footer-group container">
