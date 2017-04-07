@@ -4,6 +4,7 @@
 
 .input
   element 49px
+  transition trs_normal
   border 1px solid #bdc2c7
   background-color white
   color inherit
@@ -13,6 +14,9 @@
 
   +search_cancel()
     display none
+    
+  &:focus
+    box-shadow shadow
 
   &--wide
     display block
