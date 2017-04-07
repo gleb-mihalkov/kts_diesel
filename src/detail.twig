@@ -127,9 +127,76 @@
                   </div>
                 </div>
               </div>
-              <div class="tabs_content__item">Текст аналогов</div>
-              <div class="tabs_content__item">Текст доставки</div>
-              <div class="tabs_content__item">Текст оплаты</div>
+              <div class="tabs_content__item">
+                {% include 'html/products_list_no_nav.twig' %}
+              </div>
+              <div class="tabs_content__item">
+                <div class="delivery">
+                  <div class="delivery__item">
+                    <div class="delivery__title">Доставка по г. Москва</div>
+                    <div class="delivery__text">Стоимость курьерской доставки по Москве до 5 кг.  —  390 a</div>
+                    <div class="delivery__title">Доставка в регионы</div>
+                    <div class="delivery__text">Мы работаем с транспортной компанией «Деловые Линии». Это удобный и быстрый способ доставки. Доставку груза до ТК «Деловые Линии» мы осуществляем бесплатно! Вы можете выбрать другую транспортную компанию и самостоятельно вызвать на наш адрес:<br />
+                    г. Москва МКАД 32 км. Внешняя сторона ТК ТРАКТ пав. 2-43Б</div>
+                    <div class="delivery__title">Особенности доставки</div>
+                    <div class="delivery__text">
+                      <ul>
+                        <li>—  При заказе до 12:00 осуществляем отправку</li>
+                        <li>—  после 14:00 в тот же день</li>
+                        <li>—  Отправки осуществляются каждый день</li>
+                        <li>—  Возможна срочная доставка в регионы ­ от 1 дня</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="delivery__item">
+                    <div class="delivery__title">Самовывоз</div>
+                    <div class="delivery__text">
+                      Вы можете забрать товар по адресу:<br />
+                      г. Москва МКАД 32 км. Внешняя сторона ТК ТРАКТ пав. 2-43Б
+                      <br /><br />
+
+                      Мы работаем ежедневно с 9:00 до 18:00
+                      <div class="box" style="height: 317px;border: 1px solid #cdc8b8;margin: 25px 0 0 0;">
+                        <div class="box__main">
+                          <div class="map" data-icon="res/marker.png" data-icon-size="[40, 50]" data-coords="[55.57336445064266,37.617653903427126]" data-zoom="16" ></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tabs_content__item">
+                <div class="pay clear">
+                 <div class="pay__item">
+                    <div class="pay__title">Безналичный расчет</div>
+                    <div class="pay__title pay__title--marg">Для юридических лиц</div>
+                    <ul>
+                      <li>—  По реквизитам карты</li>
+                    </ul>
+                    <div class="pay__title pay__title--marg">Для частных лиц</div>
+                    <ul>
+                      <li>—  Оплата через Сбербанк–онлайн</li>
+                      <li>—  Оплата через Сбербанк–онлайн</li>
+                    </ul>
+                  </div>
+                  <div class="pay__item">
+                    <div class="pay__title">Наличный расчет</div>
+                    <div class="pay__text">
+                      <p>Вы можете оплатить заказ наличными<br />
+                      у нас в офисе по адресу:</p>
+                      <p>г. Москва МКАД 32 км. Внешняя сторона ТК ТРАКТ пав. 2-43Б</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="page__line"></div>
+                <div class="pay pay--flex-center">
+                  <div class="pay__item">Дополнительную информацию вы можете получить у менеджера<br />
+                  по телефону  <strong>+7 (495) 204-27-05</strong> или закажите обратный звонок и мы перезвоним вам</div>
+                  <div class="pay__item">
+                    <a href="#" class="button button--primary">Заказать звонок</a>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         <!--End Catalog Detail-->

@@ -1,0 +1,49 @@
+<div class="products-list">
+  <div class="products-list__content">
+    {% for number in 1..10 %}
+      <div class="products-list__item">
+        <form action="#" class="product-item  {% if number % 3 == 0 %}active{% endif %}">
+          <input type="hidden" name="id" value="{{ number }}">
+          {% if number % 3 == 0 %}
+            <a href="#" class="product-item__image product-item__image--empty"></a>
+          {% else %}
+            <a href="#" class="product-item__image" style="background-image: url('res/product_item.png')"></a>
+          {% endif %}
+          <div class="product-item__text">
+            <div class="product-item-text">
+              <div class="product-item-text__aside">
+                Артикул: 0445110646
+                &nbsp;|&nbsp;
+                Bosch
+              </div>
+              <h2 class="product-item-text__main">
+                <a href="#">Форсунка №{{ number }}</a>
+              </h2>
+            </div>
+          </div>
+          <div class="product-item__price">
+            <div class="product-item-text">
+              {% if number % 3 == 0 %}
+                <div class="product-item-text__aside">
+                  Наличие и цену<br>уточняйте у менеджера
+                </div>
+              {% else %}
+                <div class="product-item-text__aside">
+                  Розничная цена:
+                </div>
+                <div class="product-item-text__main">
+                  <span class="price">10 122</span>
+                </div>
+              {% endif %}
+            </div>
+          </div>
+          <button type="submit" name="remove" class="product-item__button product-item__button--remove"></button>
+          <button type="submit" name="add" class="product-item__button product-item__button--add"></button>
+        </form>
+      </div>
+    {% endfor %}
+  </div>
+  <div class="lazy_load">
+    <a href="#" class="button button--primary">Показать ещё</a>
+  </div>
+</div>

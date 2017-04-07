@@ -3,6 +3,7 @@
 /// -------------------------
 .catalog-detail
   border 1px solid #f2f2f2
+  border-top none
   &__brend
     margin 0 158px 0 0
 .catalog-detail__block:after
@@ -149,3 +150,54 @@
   width 100%
   margin 30px 0 0 0
   border 1px solid #f2f2f2
+.lazy_load
+  text-align center
+.delivery
+  display flex
+  flex-direction row
+  flex-wrap nowrap
+  justify-content space-between
+  align-content stretch
+  align-items flex-start
+  &__item
+    float left
+    width 50%
+    &:first-child
+      padding 0 10px 0 0
+    &:last-child
+      padding 0 0 0 32px
+  &__title
+    font-size 16px
+    font-weight 700
+    color #1b2026
+    margin 0 0 25px 0
+  &__text
+    font-size 16px
+    font-weight 400
+    line-height 24px
+    color #1b2026
+    margin 0 0 51px 0
+.pay
+  display flex
+  flex-direction row
+  flex-wrap nowrap
+  justify-content space-between
+  align-content stretch
+  align-items flex-start
+  &__item
+    order 0
+    flex 0 1 auto
+    align-self auto
+    font-size 16px
+    line-height 24px
+  &__title
+    font-size 16px
+    font-weight 700
+    color #1b2026
+    margin 0 0 25px 0
+    &--marg
+      margin 0
+  & ul
+    margin 0px 0 22px 0
+  &--flex-center
+    align-content center
