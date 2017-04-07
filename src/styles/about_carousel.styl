@@ -11,9 +11,11 @@
   &__content
     position relative
     flex 1 1 50%
+    overflow hidden
   
   &__aside
     position absolute
+    z-index 3
     left 0
     bottom 0
     display block
@@ -49,21 +51,10 @@
       background-color white
     
   &__item
-    transition trs_normal
     background-repeat no-repeat
     background-position center center
     background-size cover
-    visibility hidden
-    opacity 0
-    position absolute
-    top 0
-    left 0
-    width 100%
     height 360px
-    
-    &.active
-      visibility visible
-      opacity 1
     
   &--small
     width 320px

@@ -1,0 +1,66 @@
+/// ---------------------------------
+/// Карусель и эффекты смены слайдов.
+/// ---------------------------------
+
+.carousel
+  overflow hidden
+  
+  & > *
+    position absolute
+    z-index 1
+    top 0
+    left 0
+    width 100%
+    
+    &.active
+    &.enter
+    &.leave
+      z-index 2
+  
+  &.next
+    
+    & > .enter
+      animation slide_next_enter 500ms ease-in-out both
+    
+    & > .leave
+      animation slide_next_leave 500ms ease-in-out both
+      
+  &.back
+    
+    & > .enter
+      animation slide_back_enter 500ms ease-in-out both
+    
+    & > .leave
+      animation slide_back_leave 500ms ease-in-out both
+
+@keyframes slide_next_enter
+  
+  from
+    transform translate(100%)
+
+  to
+    transform translate(0)
+
+@keyframes slide_next_leave
+
+  from
+    transform translate(0)
+
+  to
+    transform translate(-100%)
+
+@keyframes slide_back_enter
+  
+  from
+    transform translate(-100%)
+
+  to
+    transform translate(0)
+
+@keyframes slide_back_leave
+
+  from
+    transform translate(0)
+
+  to
+    transform translate(100%)

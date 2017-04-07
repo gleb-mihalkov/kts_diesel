@@ -1,14 +1,14 @@
 <div class="box">
   <div class="box__aside box__aside--offset-small">
     <div class="about-carousel about-carousel--small">
-      <div class="about-carousel__content">
+      <div class="about-carousel__content  carousel" id="about_carousel">
         {% for number in 1..3 %}
           <div class="about-carousel__item {% if loop.index == 1 %}active{% endif %}" style="background-image: url('res/about_01.png')"></div>
         {% endfor %}
       </div>
       <div class="about-carousel__aside">
         <a href="#" class="button button--primary button--wide">Подробнее о магазине</a>
-        <div class="about-carousel__dots">
+        <div class="about-carousel__dots" data-dots="about_carousel">
           {% for number in 1..3 %}
             <a href="#" class="about-carousel__dot {% if loop.index == 1 %}active{% endif %}"></a>
           {% endfor %}
