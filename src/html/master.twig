@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <title>{{ title }}</title>
   <link rel="stylesheet" href="style.css">
-  <script type="text/javascript" src="script.js"></script>
+  <script type="text/javascript" src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
 </head>
 <body>
   <div class="global">
@@ -125,10 +125,26 @@
         </div>
       </header>
     </div>
-    <div class="global__content">
+    <div class="global__content {% if is_bottom %}global__content--no-bottom{% endif %}">
       {% block content %}{% endblock %}
     </div>
     <div class="global__footer">
+      {% if is_bottom %}
+        <div class="bar bar--plain">
+          <div class="container">
+            {% include 'responses_carousel.twig' %}
+          </div>
+        </div>
+        <div class="bar bar--plain">
+          <div class="container">
+            <div class="heading-group">
+              <h2 class="heading-group__title">Совершать покупки можно в магазине</h2>
+              <p class="heading-group__text">по адресу: г. Москва, МКАД 32 км. Внешняя сторона ТК ТРАКТ пав. 2-43Б</p>
+            </div>
+            {% include 'map.twig' %}
+          </div>
+        </div>
+      {% endif %}
       <footer class="footer">
         <div class="footer__top">
           <div class="footer-group container">
