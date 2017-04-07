@@ -29,12 +29,18 @@
     line-height 71px
     cursor pointer
     position relative
+    transition trs_normal
+    text-transform uppercase
+    font-weight 700
     background #fafafa
+    color #7e8792
+    &:hover
+      color #1b2026
     &:before
       height 0
       transition trs_normal
       content ''
-    &.active, &:hover
+    &.active
       font-weight 700
       background #fff
       text-transform uppercase
@@ -63,13 +69,18 @@
       border none
 .tabs_content
   position relative
+  &__group
+    display flex
+  &__title
+    color #1b2026
+    font-weight 700
+    margin 0 5px 0px 0
   &__item
     padding 31px 35px 27px 31px
     position absolute
     top 0
     left 0
     z-index 1
-    transition trs_normal
     opacity 0
     &.active
       opacity 1
@@ -77,3 +88,5 @@
       position relative
       z-index 10
       transition trs_normal
+  p
+    line-height 24px
