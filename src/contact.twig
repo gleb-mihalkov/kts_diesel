@@ -4,6 +4,11 @@
 
 {% block content %}
   <div class="container container--large">
+    <div class="page">
+    <div class="page__header">
+      {% include 'html/lead.twig' %}
+    </div>
+    <div class="page__main page__main--contact">
     <div class="contact-block">
       <div class="contact-block__list contact-block__list--left ">
         <div class="contact-block__list-item">
@@ -56,9 +61,12 @@
           </div>
         </div>
       </div>
-      <div class="contact-block__map"></div>
+      <div class="map" data-icon="res/marker.png" data-icon-size="[40, 50]" data-coords="[55.57336445064266,37.617653903427126]" data-zoom="16" ></div>
     </div>
     <div class="contact-slider js-slider">
+
     </div>
+  </div>
+  </div>
   </div>
 {% endblock %}
