@@ -4,7 +4,7 @@
     <div class="box__content">
       <div class="collapse-list">
         {% for number in 1..10 %}
-          <div class="collapse-list__item  collapse">
+          <div class="collapse-list__item  collapse  {% if loop.index == 1 %}active{% endif %}">
             <h3 class="collapse__heading">Какая гарантия, что товар заявленного качества?</h3>
             <div class="collapse__content">
               <div class="collapse__inner  text">

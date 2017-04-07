@@ -2,3 +2,4 @@
 //=include scripts/scripts.js
 //
 //=include scripts/map.js
+//=include scripts/collapse.js
