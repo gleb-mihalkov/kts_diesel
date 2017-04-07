@@ -13,3 +13,8 @@
       return false;
     });
 })(window.jQuery);
+!(function($) {
+  $(document).on('click', 'a', function(){
+    return false;
+  })
+})(window.jQuery);
