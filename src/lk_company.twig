@@ -1,0 +1,65 @@
+{% extends 'html/master_no_line.twig' %}
+{% set title = 'Личный кабинет' %}
+{% set is_main = true %}
+
+{% block content %}
+  <div class="container container--large">
+    <div class="page">
+    <div class="page__header">
+      {% include 'html/lead.twig' %}
+    </div>
+    <div class="page__aside">
+      {% include 'html/lk_menu_com.twig' %}
+    </div>
+      <div class="page__main">
+        <form class="company_info">         
+            <div class="company_info__group">
+              <div class="company_info__title">
+                <strong>Данные компании</strong><img src="img/lk_icon.png"><span>Информация о компании и руководителе потребуется для подтверждения регистрации</span>
+              </div>
+              <label>
+                <span>Полное наименование</span><input type="text" class="input" name="" id="" placeholder="">
+              </label>
+              <label>
+                <span>Юридический адрес</span><input type="text" class="input" name="" id="" placeholder="">
+              </label>
+              <label>
+                <span>Фактический адрес</span><input type="text" class="input" name="" id="" placeholder="">
+              </label>
+              <label class="post">
+                <span>Почтовый адрес</span><input type="text" class="input" name="" id="" placeholder="">
+              </label>
+              <label class="post_check">
+                <input type="checkbox" name=""><span>Совпадает с фактическим</span>
+              </label>
+              <label>
+                <span>Сайт компании</span><input type="text" class="input" name="" id="" placeholder="">
+              </label>
+              <label>
+                <span>Описание деятельности</span><textarea placeholder="Например, продажа запчастей для дизельной техники"></textarea>
+              </label>
+            </div>
+            <div class="company_info__group">
+              <label>
+                <span>ФИО руководителя</span><input type="text" class="input" name="" id="" placeholder="">
+              </label>
+              <label>
+                <span>Телефон руководителя</span><input type="text" class="input" name="" id="" placeholder="">
+              </label>
+            </div>
+            <label>
+              <span>Новый пароль</span><input type="password" class="input" name="" id="" placeholder="">
+              <div class="subs">
+                Пароль должен содержать только латинские буквы и цифры (A-Z, a-z, 0-9).<br />
+                Минимальная длина пароля 6 символов.
+              </div>
+            </label>
+            <label>
+              <span>Новый пароль еще раз</span><input type="" class="input" name="" id="" placeholder="parol54321">
+            </label>
+            <a href="#" class="button button--primary">Сохранить</a>
+        </form>
+      </div>
+    </div>
+  </div>
+{% endblock %}

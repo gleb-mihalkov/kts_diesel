@@ -1,0 +1,28 @@
+{% extends 'html/master_no_line.twig' %}
+{% set title = 'Введите новый пароль' %}
+{% set is_main = true %}
+
+{% block content %}
+  <div class="container container--large">
+    <div class="page">
+    <div class="page__header">
+      {% include 'html/lead.twig' %}
+    </div>
+      <div class="page__main">
+        <form class="new_pass">         
+            <label>
+              <span>Придумайте пароль</span><input type="password" class="input" name="" id="" placeholder="">
+            </label>
+            <div class="subs">
+                Пароль должен содержать только латинские буквы и цифры (A-Z, a-z, 0-9).<br />
+                Минимальная длина пароля 6 символов.
+            </div>
+            <label>
+              <span>Повторите пароль</span><input type="password" class="input" name="" id="" placeholder="">
+            </label>
+            <a href="#" type="submit" class="button button--primary">Сохранить</a>
+        </form>
+      </div>
+    </div>
+  </div>
+{% endblock %}

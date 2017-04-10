@@ -1,0 +1,23 @@
+{% extends 'html/master_no_line.twig' %}
+{% set title = 'Восстановление пароля' %}
+{% set is_main = true %}
+
+{% block content %}
+  <div class="container container--large">
+    <div class="page">
+      <div class="page__header">
+        {% include 'html/lead.twig' %}
+      </div>
+      <div class="page__main">
+        <p>Укажите адрес электронной почты, который вы использовали при регистрации.
+        Инструкции по восстановлению пароля будут отправлены на этот адрес.</p>
+        <form class="rec_pass">
+          <span>Восстановление пароля</span>
+          <input type="" class="input" name="" id="" placeholder="user@mail.ru">
+          <div class="success">Вам отправлено письмо с инструкцией по восстановлению пароля</div>
+          <a href="#" class="button button--primary">Восстановить пароль</a>
+        </form>
+      </div>
+    </div>
+  </div>
+{% endblock %}

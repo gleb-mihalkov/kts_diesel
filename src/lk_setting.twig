@@ -1,0 +1,35 @@
+{% extends 'html/master_no_line.twig' %}
+{% set title = 'Личный кабинет' %}
+{% set is_main = true %}
+
+{% block content %}
+  <div class="container container--large">
+    <div class="page">
+    <div class="page__header">
+      {% include 'html/lead.twig' %}
+    </div>
+    <div class="page__aside">
+      {% include 'html/lk_menu.twig' %}
+    </div>
+      <div class="page__main">
+        <div class="lk_title">Изменение пароля</div>
+        <form class="change_pass">         
+            <label>
+              <span>Текуший пароль</span><input type="password" class="input" name="" id="" placeholder="">
+            </label>
+            <label>
+              <span>Новый пароль</span><input type="password" class="input" name="" id="" placeholder="">
+              <div class="subs">
+                Пароль должен содержать только латинские буквы и цифры (A-Z, a-z, 0-9).<br />
+                Минимальная длина пароля 6 символов.
+              </div>
+            </label>
+            <label>
+              <span>Новый пароль еще раз</span><input type="" class="input" name="" id="" placeholder="parol54321">
+            </label>
+            <a href="#" class="button button--primary">Сохранить</a>
+        </form>
+      </div>
+    </div>
+  </div>
+{% endblock %}

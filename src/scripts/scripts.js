@@ -27,4 +27,10 @@ $(document).ready(function(){
       return false;
     })
   })(window.jQuery);
+  !(function($) {
+      $(document).on('click', '.rec_pass a', function(e){
+        var $self = $(e.target);
+        $self.siblings('.success').addClass('active');
+      })
+  })(window.jQuery);
 });

@@ -1,0 +1,39 @@
+{% extends 'html/master_no_line.twig' %}
+{% set title = 'Вход в личный кабинет' %}
+{% set is_main = true %}
+
+{% block content %}
+  <div class="container container--large">
+    <div class="page">
+      <div class="page__header">
+        {% include 'html/lead.twig' %}
+      </div>
+      <div class="page__main page__main--plain">
+        <form class="lk clear">
+          <label>
+            <span>Ваша эл. почта</span><input type="" class="input" name="" id="" placeholder="user@mail.ru">
+          </label>
+          <label>
+            <span>Введите пароль</span>
+            <input type="" class="input" name="" id="" placeholder="parol12345">
+            <span class="view_form"></span>
+          </label>
+          <a href="#" class="rec_pass">Забыли пароль?</a>
+          <a href="#" class="button button--primary">Войти</a>  
+        </form>
+        <div class="lk_social">
+          <p>Удобный способ авторизации –<br />через социальные сети</p>
+          <div class="lk_social__item">
+            <a href=""><img src="img/fb.png"><span>Facebook</span></a>
+          </div>
+          <div class="lk_social__item">
+            <a href=""><img src="img/vk.png"><span>ВКонтакте</span></a>
+          </div>
+          <div class="lk_social__item">
+            <a href=""><img src="img/ok.png"><span>Одноклассники</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}

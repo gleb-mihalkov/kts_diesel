@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>{{ title }}</title>
+  <link rel="stylesheet" href="style.css">
+  <script type="text/javascript" src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+</head>
+<body>
+  <div class="global">
+    <div class="global__header">
+      <header class="header">
+        <div class="header__top">
+          <div class="header-group  container">
+            <div class="header-group__item">
+              <div class="city-info">
+                <a href="#" class="city-info__picker">
+                  <span>Москва</span>
+                </a>
+                <span class="city-info__content">
+                  <span class="city-info__text">МКАД 32 км. Внешняя сторона ТК ТРАКТ пав. 2-43Б</span>
+                  <span class="city-info__divider">|</span>
+                  <a href="#" class="city-info__link">Как проехать?</a>
+                </span>
+              </div>
+            </div>
+            <div class="header-group__item header-group__item--to-right header-group__item--offset-15">
+              <button class="button button--dark button--email">sale@forsunki-rf.ru</button>
+            </div>
+            <div class="header-group__item">
+              <a href="#" class="button button--dark">Доставка и оплата</a>
+            </div>
+            <div class="header-group__item">
+              <a href="#" class="button button--dark">Помощь</a>
+            </div>
+          </div>
+        </div>
+        <div class="header__main">
+          <div class="header-group  container">
+            <div class="header-group__item">
+              <a href="index.html" title="Перейти на главную" class="logo">КТС Дизель</a>
+            </div>
+            <div class="header-group__item header-group__item--offset-34">
+              <span class="slogan">
+                Комплектующие к топливным системам<br>
+                <strong>BOSCH, DENSO, DELPHI, SIEMENS</strong>
+              </span>
+            </div>
+            <div class="header-group__item header-group__item--to-right">
+              <div class="contacts">
+                <a href="#" rel="nofollow" class="contacts__item">+7 (495) 204-27-05</a>
+                <a href="#" rel="nofollow" class="contacts__item">+7 (916) 104-40-10</a>
+              </div>
+            </div>
+            <div class="header-group__item header-group__item--offset-50">
+              <div class="account-info">
+                <div class="account-info__heading">Личный кабинет</div>
+                <a class="account-info__link" href="#">Вход</a>
+                <span class="account-info__divider"></span>
+                <a class="account-info__link" href="#">Регистрация</a>
+                <div class="account-info__image"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="header__aside">
+          <div class="header-group  container">
+            <div class="header-group__item">
+              {% include 'main_menu.twig' %}
+            </div>
+            <div class="header-group__item header-group__item--offset-10">
+              <a href="#" class="button button--primary button--plain">Оптовикам</a>
+            </div>
+            <div class="header-group__item header-group__item--stretch">
+              <input type="search" class="input input--wide input--search" placeholder="Поиск товара по артикулу">
+            </div>
+            <div class="header-group__item header-group__item--offset-20">
+              <div class="basket-info">
+                <a href="#" class="basket-info__icon" data-count="1"></a>
+                <div class="basket-info__dropdown">
+                  <div class="basket-info__heading">
+                    Итого - <span class="price">24 744</span>
+                  </div>
+                  <div class="basket-info__content"></div>
+                  <div class="basket-info__bottom">
+                    <a href="#" class="button button--primary button--wide">Перейти к оформлению</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+    </div>
+    <div class="global__content {% if is_bottom %}global__content--no-bottom{% endif %}">
+      {% block content %}{% endblock %}
+    </div>
+    <div class="global__footer">
+      {% if is_bottom %}
+        <div class="bar bar--plain">
+          <div class="container">
+            {% include 'responses_carousel.twig' %}
+          </div>
+        </div>
+        <div class="bar bar--plain">
+          <div class="container">
+            <div class="heading-group">
+              <h2 class="heading-group__title">Совершать покупки можно в магазине</h2>
+              <p class="heading-group__text">по адресу: г. Москва, МКАД 32 км. Внешняя сторона ТК ТРАКТ пав. 2-43Б</p>
+            </div>
+            {% include 'map.twig' %}
+          </div>
+        </div>
+      {% endif %}
+      <footer class="footer">
+        <div class="footer__top">
+          <div class="footer-group container">
+            <div class="footer-group__item">
+              <a href="index.html" title="Перейти на главную" class="logo">КТС Дизель</a>
+            </div>
+            <div class="footer-group__item footer-group__item--offset">
+              <span class="address">
+                Наш адрес:<br />
+                <strong>г. Москва, МКАД 32 км. Внешняя сторона ТК ТРАКТ пав. 2-43Б</strong>
+              </span>
+            </div>
+            <div class="footer-group__item footer-group__item--right">
+              <div class="contacts">
+                <a href="#" rel="nofollow" class="contacts__item">+7 (495) 204-27-05</a>
+                <a href="#" rel="nofollow" class="contacts__item">+7 (916) 104-40-10</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer__main">
+          {% include 'footer_menu.twig' %}
+        </div>
+        <div class="footer__bottom">
+          <div class="footer-group container">
+            <div class="footer-group__item footer-group__item">
+              <div class="copyright">
+                © КТС-Дизель – Комплектующие к топливным системам<br />
+                Все права защищены, 2003 – 2017
+              </div>
+            </div>
+            <div class="footer-group__item">
+              <a href="https://kluev.bz/" target="_blank" rel="nofollow" class="studio studio--offset">
+                Сайт создан в маркетинговом<br />
+                агентстве KLUEV.BZ
+              </a>
+            </div>
+            <div class="footer-group__item">
+              <a href="https://letsencrypt.org/" target="_blank" rel="nofollow" class="encrypt"></a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

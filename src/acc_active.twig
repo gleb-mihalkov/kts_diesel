@@ -1,0 +1,19 @@
+{% extends 'html/master_no_line.twig' %}
+{% set title = 'Активация аккаунта' %}
+{% set is_main = true %}
+
+{% block content %}
+  <div class="container container--large">
+    <div class="page">
+      <div class="page__main page__main--center">
+        <div class="lk_active">
+          <img src="img/active_acc.png">
+          <h1>Ваш аккаунт активирован!</h2>
+          <p>Процесс регистрации закончен и для получения статуса «Оптовик» вам осталось<br />
+          лишь заполнить данные в личном кабинете (если вы еще не сделали этого)</p>
+          <a href="#" class="button button--primary">перейти к заполнению</a>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}
